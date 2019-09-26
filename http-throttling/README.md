@@ -18,7 +18,7 @@ import(throttling "github.com/sourgoyal/golang/http-throttling")
 ConfigureLimiter(r rate.Limit, b int)
 
 // To be called by application to check rate limit
-func LimitRate(next http.Handler) http.Handler
+LimitRate(next http.Handler) http.Handler
 ```
 
 # North Star 
@@ -26,7 +26,5 @@ func LimitRate(next http.Handler) http.Handler
 - Rate limitting for particular methods
 - Allow runtime rate limit configuration
 
-# License Info
+# License
 MIT License
-
-Copyright 2019 Sourabh
